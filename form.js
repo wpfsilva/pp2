@@ -94,8 +94,8 @@ if(!algumaSelecionada)
   } else {
     checkbox.style.border = "2px solid red";
     valido = false;
-    checkbox.nextElementSibling.textContent = "É necessário aceitar os termos acima !"
-    checkbox.nextElementSibling.style.color = "crimson";
+    checkbox.nextElementSibling.nextElementSibling.textContent = "É necessário aceitar os termos !"
+    checkbox.nextElementSibling.nextElementSibling.style.color = "crimson";
   }
 
   if (valido) {
