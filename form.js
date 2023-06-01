@@ -39,19 +39,40 @@ function valida(e) {
   }
 
 
-  var radios = document.getElementsByName('tipoctt');
-  var algumaSelecionada = false;
-  var selecionado = "";
+  let radios = document.getElementsByName('tipoctt');
+  let algumaSelecionada = false;
+  let selecionado = "";
+  let radio_div = document.getElementById('div_radio'); // 00000000000000000
 
-  for (var i = 0; i < radios.length; i++) {
+  for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
       algumaSelecionada = true;
       selecionado = radios[i].id;
-      console.log(radios[i].id);
       break;
     }
   }
 
+if(!algumaSelecionada)
+{
+    valido = false;
+    for(let i = 0; i < radios.length; i++)
+    {
+    radios[i].style.border = "2px solid red";
+    }
+    radio_div.nextElementSibling.textContent = "Selecione uma opção válida!";
+}else
+{
+    for(let i = 0; i < radios.length; i++)
+    {
+    if (radios[i].checked) {
+        radios[i].style.border = "2px solid green";
+    }else
+    {
+    radios[i].style.border = "";
+    }
+    }
+    radio_div.nextElementSibling.textContent = "";
+}
 
 
   if (formulario.mensagem.value.length == 0) {

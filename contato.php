@@ -45,32 +45,32 @@
           <label for="email">Email</label><span></span>
         </div>
 
-      <div class="m-auto col-md-4">
+      <div class="m-auto col-md-4 mb-0" id="div_radio">
         <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tipoctt" id="Sugestão">
+        <input class="form-check-input" type="radio" name="tipoctt" id="Sugestão" value="Sugestão">
         <label class="form-check-label" for="Sugestão">
           Sugestões
         </label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tipoctt" id="Críticas">
+        <input class="form-check-input" type="radio" name="tipoctt" id="Críticas" value="Críticas">
         <label class="form-check-label" for="Críticas">
           Críticas
         </label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="tipoctt" id="Elogios">
+        <input class="form-check-input" type="radio" name="tipoctt" id="Elogios" value="Elogios">
         <label class="form-check-label" for="Elogios">
           Elogios
         </label>
       </div>
       <div class="form-check form-check-inline mb-3">
-        <input class="form-check-input" type="radio" name="tipoctt" id="Outros">
+        <input class="form-check-input" type="radio" name="tipoctt" id="Outros" value="Outros">
         <label class="form-check-label" for="Outros">
           Outros
         </label>
       </div>
-    </div><span></span>
+    </div><span class="row d-flex justify-content-center mb-3"></span>
 
         <div class="form-floating mb-3">
           <textarea class="form-control" placeholder="Deixe sua mensagem aqui:" id="mensagem" style="height: 100px" name="mensagem"></textarea>
