@@ -15,8 +15,8 @@ function valida(e) {
 
   if (objnome.value == null || str_nome.length < 2) {
     objnome.style.border = "2px solid red";
-    objnome.nextElementSibling.nextElementSibling.textContent =
-      "O usuário deve digitar Nome e Sobrenome";
+    objnome.nextElementSibling.nextElementSibling.textContent = "O usuário deve digitar Nome e Sobrenome";
+    objnome.nextElementSibling.nextElementSibling.style.color = "crimson";
     valido = false;
   } else {
     objnome.style.border = "2px solid green";
@@ -32,6 +32,7 @@ function valida(e) {
     objemail.style.border = "2px solid red";
     objemail.nextElementSibling.nextElementSibling.textContent =
       "O email deve ser válido (exemplo: exemplo@dominio.com)";
+      objemail.nextElementSibling.nextElementSibling.style.color = "crimson";
     valido = false;
   } else {
     objemail.style.border = "2px solid green";
@@ -42,7 +43,7 @@ function valida(e) {
   let radios = document.getElementsByName('tipoctt');
   let algumaSelecionada = false;
   let selecionado = "";
-  let radio_div = document.getElementById('div_radio'); // 00000000000000000
+  let radio_div = document.getElementById('div_radio');
 
   for (let i = 0; i < radios.length; i++) {
     if (radios[i].checked) {
@@ -60,6 +61,7 @@ if(!algumaSelecionada)
     radios[i].style.border = "2px solid red";
     }
     radio_div.nextElementSibling.textContent = "Selecione uma opção válida!";
+    radio_div.nextElementSibling.style.color = "crimson";
 }else
 {
     for(let i = 0; i < radios.length; i++)
@@ -80,6 +82,7 @@ if(!algumaSelecionada)
     formulario.mensagem.style.border = "2px solid red";
     formulario.mensagem.nextElementSibling.nextElementSibling.textContent =
       "Obrigatório preenchimento!";
+      formulario.mensagem.nextElementSibling.nextElementSibling.style.color = "crimson";
   } else {
     formulario.mensagem.style.border = "2px solid green";
   }
@@ -91,6 +94,8 @@ if(!algumaSelecionada)
   } else {
     checkbox.style.border = "2px solid red";
     valido = false;
+    checkbox.nextElementSibling.textContent = "É necessário aceitar os termos acima !"
+    checkbox.nextElementSibling.style.color = "crimson";
   }
 
   if (valido) {

@@ -80,7 +80,7 @@
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" value="concordo" id="flexCheckDefault" name="termo[]">
             <label class="form-check-label" for="flexCheckDefault">Ao clicar aqui você concorda em compartilhar seu email para retorno de contato.</label><span></span>
-          </div>
+          </div><span></span>
             <input type="submit" class="btn btn-primary mb-3" value="enviar">
         </div>
       </form>
